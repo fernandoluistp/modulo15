@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Contato - Portfólio Digital - Fernando Penachin</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Reset -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+		<!-- Estilos específicos -->
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="./js/script.js"></script>
+		
+
+	</head>
+
+	<body>
+		<div class="mensagem"></div>
+		<div class="container">
+			<div class="overlay" id="overlay"></div>
+			<!--<div id="objeto"></div>-->
+			<header name="banner-internas">
+				<nav class="menu-superior" id="menu-topo">
+					<h1 class="logo-site-container"><a href="index.html"><img src="./imagens/logo.svg" alt="Logo Portfólio Digital - Fernando Penachin" class="logo-site"></a></h1>
+					<ul id="menu-ul">
+						<li class="link-menu-superior"><a onclick="scrollMenu(itemMenu[0])">Dados Básicos</a></li>
+						<li class="link-menu-superior"><a onclick="scrollMenu(itemMenu[1])">Tipo</a></li>
+						<li class="link-menu-superior"><a onclick="scrollMenu(itemMenu[2])">Dados Complementares</a></li>
+						<li class="link-menu-superior"><a onclick="scrollMenu(itemMenu[3])">Sobre o projeto</a></li>
+					</ul>
+					<div id="responsivo"><span id="botao-menu-responsivo" style="position: absolute; top: 40px;right: 20px;"><img src="./imagens/bars-solid.svg" style="width: 30px;"></span></div>
+
+				</nav>
+		
+			</header>
+			
+			<main class="internas-main">
+			
+
+				<article>
+					<h1>Inscreva-se!</h1>
+					<div class="internas-design-introducao">
+
+					<div class="formulario-container">
+							<p>* Dados de preenchimento obrigatório</p>
+						<form method="post">
+							
+	
+							<div id="dadosbasicos" class="formulario-parte-1 secao">
+								<h3>Dados básicos</h3>
+
+								<div class="formulario-campo-50">
+									<label for="nome">Nome:</label>
+									<input type="text" name="Nome" id="nome" placeholder="Digite seu nome" class="requerido" >
+								</div>
+								<div class="formulario-campo-50">
+									<label for="email">E-mail:</label>
+									<input type="email" name="E-mail" id="email" placeholder="Digite seu e-mail" class="email" >
+								</div>
+								<div class="formulario-campo-50">
+									<label for="fone">Fone:</label>
+									<input type="tel" name="Fone" id="fone" placeholder="Digite somente os números com código do país" class="fone" >
+								</div>
+								<div class="formulario-campo-50">
+									<label for="nome">Endereço:</label>
+									<input type="text" name="Endereço" id="endereco" placeholder="Digite seu Endereço" class="requerido"  >
+								</div>
+								<div class="formulario-campo-50">
+									<label for="nome">Cidade:</label>
+									<input type="text" name="Cidade" id="cidade" placeholder="Digite sua cidade" class="requerido"  >
+								</div>
+								<div class="formulario-campo-50">
+									<label for="estado">Estado:</label>
+									<select name="Estado" id="uf" class="uf">
+				
+
+									</select>
+								</div>
+								<div class="formulario-campo-50">
+									<label for="cep">CEP:</label>
+									<input type="text" name="CEP" id="cep" placeholder="Digite seu CEP" class="cep"  >
+								</div>
+
+								
+								</div>
+
+								<div id="tipo" class="formulario-parte-1 secao">						
+								<h3>Tipo</h3>
+
+								<div class="formulario-campo-50">
+									<p>
+										<label for="pessoa">Cadastro para:</label>
+										<label><input type="radio" id="pf" name="pessoa" value="pessoafisica" checked="checked" > Pessoa Física</label>
+										<label><input type="radio" id="pj" name="pessoa" value="pessoajuridica"> Pessoa Jurídica</label>
+									</p>
+								</div>
+								</div>
+
+								<div id="dadoscomplementares" class="formulario-parte-1 secao">
+
+								<h3 >Dados complementares</h3>
+
+								<div class="formulario-campo-50 campo-pf">
+									<label for="cpf">CPF:</label>
+									<input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite somente os números"  >
+								</div>
+
+								<div class="formulario-campo-50 campo-pj ocultar">
+									<label for="empresa">Sua empresa:</label>
+									<input type="text" name="empresa" class="requeridoPJ" id="empresa" placeholder="Sua empresa"  >
+								</div>
+								<div class="formulario-campo-50 campo-pj ocultar">
+									<label for="cnpj">CNPJ:</label>
+									<input type="tel" name="cnpj" id="cnpj" class="cnpj" placeholder="Digite somente os números"  >
+								</div>
+								<div class="formulario-campo-50 campo-pj ocultar">
+									<label for="url">Seu site:</label>
+									<input type="url" name="url" id="url" class="url" placeholder="https://seusite.com"  >
+								</div>
+							</div>
+
+							<div id="sobreprojeto" class="formulario-parte-2 secao">
+								<h3>Sobre seu projeto</h3>
+
+								<div class="formulario-campo-50">
+									<p>
+										<label>Quais serviços você deseja?</label>
+										<label><input type="checkbox" name="quais-servicos" class="check-servicos" value="ux-ui-frontend" > UX / UI / Front-End</label>
+										<label><input type="checkbox" name="quais-servicos" class="check-servicos" value="design"> Design</label>
+										<label><input type="checkbox" name="quais-servicos" class="check-servicos" value="outros"> Outros</label>
+									</p>
+								</div>
+
+								<div class="formulario-campo-100">
+									<label for="briefing">Por favor, explique resumidamente seu projeto ou necessidade:</label>
+									<textarea name="briefing" id="briefing" rows="5" class="requerido" placeholder="Digite seu briefing"></textarea>
+								</div>
+							</div>
+		
+							
+					
+							<div class="div-botao">
+								<input type="submit" value="Enviar">
+						
+							</div>
+							
+							<div class="resultado"></div>
+						</form>
+			
+					</div>
+			</article>
+
+		</main>
+		<footer>
+			<p>Desenvolvido por <a href="./05-contato.html">Fernando Penachin</a></p>
+		</footer>
+	</div>
+	</body>
+
+</html>
+

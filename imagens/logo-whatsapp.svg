@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fab"
+   data-icon="css3"
+   class="svg-inline--fa fa-css3"
+   role="img"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg3702"
+   sodipodi:docname="logo-whatsapp.svg"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata3708">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3706">
+    <linearGradient
+       id="id0"
+       gradientUnits="userSpaceOnUse"
+       x1="1166.52"
+       y1="2349.77"
+       x2="1166.52"
+       y2="7.6387401">
+      <stop
+         offset="0"
+         style="stop-opacity:1; stop-color:#F9F9F9"
+         id="stop3756" />
+      <stop
+         offset="1"
+         style="stop-opacity:1; stop-color:white"
+         id="stop3758" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview3704"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3702" />
+  <path
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke-width:0.21142584;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill:#ffffff"
+     class="fil1"
+     d="m 11.169003,253.88575 c 0,43.34229 11.205582,85.62742 32.771012,122.83838 L 9.0547401,504.0025 139.50447,469.96291 c 35.73096,19.45116 76.32474,29.81106 117.34133,29.81106 h 0.21124 c 135.52392,0 245.88822,-110.1529 245.88822,-245.67685 0,-65.75339 -25.58252,-127.48974 -71.88472,-174.00342 C 384.54683,33.57998 322.81049,7.9974903 257.05704,7.9974903 121.53308,7.9974903 11.168812,118.36179 11.168812,253.88575 Z m 77.593272,116.49559 -4.86277,-7.82277 c -20.50833,-32.55958 -31.29104,-70.19336 -31.29104,-108.67282 0,-112.68999 91.758785,-204.44879 204.448765,-204.44879 54.54787,0 105.92435,21.35399 144.6153,60.0449 38.47951,38.47952 59.83345,89.85601 59.83345,144.40389 -0.21117,112.68992 -91.75874,204.44871 -204.44875,204.44871 h -0.21124 c -36.57667,0 -72.51906,-9.93698 -104.02148,-28.54247 l -7.39991,-4.43992 -77.381835,20.29685 z"
+     id="path3771" />
+  <g
+     transform="matrix(0.21142583,0,0,0.21142583,9.0547401,7.9974903)"
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill:#ffffff"
+     id="g3775">
+    <path
+       inkscape:connector-curvature="0"
+       class="fil2"
+       d="m 882,677 c -22,-49 -45,-50 -65,-51 -17,0 -37,0 -56,0 -19,0 -51,7 -77,36 -27,29 -102,99 -102,242 0,143 104,282 119,301 14,19 201,322 496,439 245,96 295,77 349,72 53,-5 172,-70 196,-138 24,-68 24,-126 17,-138 -8,-12 -27,-19 -56,-34 -29,-14 -172,-85 -199,-94 -26,-10 -46,-15 -65,14 -19,29 -75,95 -92,114 -17,19 -34,22 -63,7 -29,-14 -123,-45 -234,-144 -86,-77 -144,-172 -161,-201 -17,-29 -2,-45 13,-59 13,-13 29,-34 43,-51 15,-17 19,-29 29,-49 10,-19 5,-36 -2,-51 -8,-14 -64,-158 -90,-215 z m 0,0 z"
+       id="path3773"
+       style="fill:#ffffff" />
+  </g>
+</svg>

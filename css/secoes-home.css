@@ -1,0 +1,397 @@
+
+
+.container-areas-home{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+}
+
+/* Introdução */
+
+.introducao-home{
+    background: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.texto-introducao-home{
+    color: #000000;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.texto-introducao-home h1{
+    font-size: 9rem;
+    font-weight: 700;
+    color: #fc670c;
+    letter-spacing: -0.45rem;
+    line-height: 8rem;
+    margin-bottom: 4rem;
+}
+
+.texto-introducao-home h2{
+    color: #fc670c;
+}
+
+.box-introducao-home{
+    background: #f5f5f7;
+    border-radius: 1rem;
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.texto-introducao-home p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color:#333333;
+}
+
+.imagem-introducao-home {
+    flex-basis: 60%;
+    display: flex;
+    padding: 2rem;
+}
+.imagem-introducao-home img {
+    width: 100%;    
+}
+
+/* Icones Home */
+
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem;
+    box-shadow: 0px 9px 35px -20px #000000;
+}
+
+.conteudos-icones-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.portfolio ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.portfolio ul li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio ul li span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff6600;
+    margin-top: 1rem;
+    letter-spacing: -0.1rem;
+}
+
+.portfolio ul li img{
+    padding: 4rem;
+    width: 14rem;
+    height: 14rem;
+}
+
+.icones-home {
+    display: flex;
+    background: #ff6600;
+    border-radius: 50%;
+    box-shadow: 7px 5px 18px -14px rgb(0 0 1);
+    width: 13rem;
+    height: 13rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+
+/* Design + Code */
+
+.design-code{
+    background: linear-gradient(45deg, #1e4eab, #0a7eda);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.areas-design-code{
+    color: #ffffff;
+    font-weight: 700;
+    padding: 4rem 4rem;
+    display: flex;
+    flex-basis: 30%;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #1e4eab, #0a7eda);
+    border-radius: 10px;
+    text-align: right;
+    justify-content: flex-end;
+    box-shadow: 0px 9px 35px -26px #000000ee;
+}
+
+.areas-design-code li{
+    list-style: none;
+    height: 4rem;
+}
+
+.texto-design-code{
+    color: #ffffff;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-design-code p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: right;
+    width: 60%;
+    align-self: flex-end;
+}
+
+.texto-design-code h2{
+    color: #ffffff;
+    font-size: 9rem;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -0.45rem;
+}
+
+/* Softwares */ 
+
+.softwares{
+    background: linear-gradient(45deg, #f5f5f5, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.areas-softwares{
+    background: #ff6600;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 4rem 4rem;
+    display: flex;
+    flex-basis: 50%;
+    font-size: 3rem;
+    border-radius: 10px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.areas-softwares ul{
+    width: 100%;
+}
+
+.areas-softwares li{
+    list-style: none;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-softwares {
+    color: #000000;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.texto-softwares h2{
+    color:#ff6600;
+    font-size: 9rem;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -0.45rem;
+}
+
+.texto-softwares p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: right;
+    width: 60%;
+    align-self: flex-end;
+}
+
+
+/* Linguagens + Frameworks */
+
+.linguagens{
+    background: linear-gradient(45deg, #ece1e9, #cddbe7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.areas-linguagens{
+    background: linear-gradient(45deg, #000066, #5055A2);
+    color:#ffffff;
+    font-weight: 700;
+    padding: 4rem 6rem;
+    display: flex;
+    flex-basis: 50%;
+    font-size: 3rem;
+    border-radius: 10px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.areas-linguagens ul{
+    width: 100%;
+}
+
+.areas-linguagens li{
+    list-style: none;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-borda-externa {
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 3rem;
+    width: 60%;
+    display: flex;
+}
+
+.barra-percentual {
+    background: linear-gradient(90deg, #ffffffdd, #ffffff55);
+    margin: 0.2rem;
+    border-radius: 7px;
+    height: 2.4rem;
+    display: inline-block;
+    align-items: self-end;
+}
+
+.texto-linguagens{
+    color: #3c4171;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-linguagens p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: right;
+    width: 60%;
+    align-self: flex-end;
+}
+
+.texto-linguagens h2{
+    color: #3c4171;
+    font-size: 9rem;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -0.45rem;
+}
+
+@media (max-width: 1024px) {
+.areas-linguagens, .areas-softwares{
+    font-size: 1.5rem;
+    padding: 4rem 4rem;
+}
+.areas-design-code {
+    font-size: 2rem;
+    padding: 4rem 3rem;
+}
+
+.texto-design-code h2, .texto-softwares h2, .texto-linguagens h2 {
+    font-size: 7rem;
+}
+}
+
+
+@media (max-width: 768px) {
+
+ .container-areas-home {
+     flex-direction: column;
+ }
+ .banner-subtitulo h3 {
+     font-size: 3rem;
+ }
+ .portfolio ul li {
+     width: 40%;
+     margin: 5%;
+ }
+ .icones-home {
+     margin: 1rem;
+ }
+ .introducao-home, .design-code, .softwares, .linguagens{
+     height: auto;
+     padding: 2rem 0rem;
+     box-shadow: 0px -5px 10px -5px #00000055;
+ }
+ .introducao-home h2{
+     width: 80%;
+     align-self: center;
+ }
+ .container-areas-home p {
+     width: 80%;
+     align-self: center;
+ }
+ .texto-introducao-home h1 {
+     font-size: 7rem;
+     line-height: 6rem;
+     padding: 0rem 2rem;
+ }
+ .texto-design-code, .texto-softwares, .texto-linguagens {
+     align-items: center;
+     margin: auto;
+ }
+ .texto-design-code h2, .texto-softwares h2, .texto-linguagens h2{
+     font-size: 5rem;
+     letter-spacing: -0.25rem;
+     width: 80%;
+ }
+ .areas-softwares, .areas-linguagens{
+     width: 80%;
+     padding: 3rem 3rem;
+     font-size: 1.5rem;
+ }
+ .areas-linguagens, .areas-design-code{
+     order: 1;
+ }
+
+}
+
+@media (max-width: 425px) {
+
+	.portfolio ul li img {
+		padding: 3rem;
+		width: 11rem;
+		height: 11rem;
+	}
+
+    .areas-design-code {
+        padding: 3rem 3rem;
+    }
+
+    .areas-softwares, .areas-linguagens {
+        padding: 2rem 2rem;
+        font-size: 1.3rem;
+    }
+
+    .areas-softwares, .areas-linguagens {
+        padding: 2rem 2rem;
+        font-size: 1.3rem;
+    }
+
+}

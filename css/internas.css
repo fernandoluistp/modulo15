@@ -1,0 +1,487 @@
+/* Layouts padrão para as áreas internas comuns */
+.internas-main{
+    background: linear-gradient(0, #2a5b97, #092042);
+}
+
+.internas-main h2 {
+    color: #0982de;
+    font-size: 5rem;
+    letter-spacing: -0.25rem;
+}
+
+.internas-main h3{
+    font-size: 3rem;
+    letter-spacing: -0.15rem;
+    flex-basis: 100%;
+}
+
+.titulo-menor {
+    font-size: 2rem;
+    color: #777777;
+    font-weight: 600;
+    letter-spacing: initial;
+    display: block;
+    height: auto;
+    line-height: normal;
+}
+
+/* 
+
+Design / Vídeos / Sites
+
+*/
+
+/* Portfólio de Design */ 
+.internas-design-introducao {
+    background-color: #ffffffcc;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+}
+
+
+.internas-design-introducao p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.internas-design-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.internas-design-arte {
+    width: 47.5%;
+    margin-bottom: 6rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.internas-design-conteudo{
+    width: 47.5%;
+    background-color: #ffffffcc;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    margin-bottom: 6rem;
+    box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+}
+
+.internas-design-conteudo p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.internas-design-arte img{
+    width: 100%;
+}
+
+.internas-design-arte img:hover{
+    filter: drop-shadow(0px 0px 11px white);
+    cursor: pointer;
+}
+
+.internas-design-arte iframe{
+    width: 100%;
+}
+
+.internas-design-linha{
+    border-left: 1px solid #a9abae;
+}
+
+
+
+/* Sobre mim */ 
+
+
+
+.internas-sobremim {
+    background-color: #ffffffcc;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+}
+
+.foto-perfil{
+    width: 30%;
+    justify-content: center;
+}
+
+.img-perfil{
+	border-radius:50%;
+}
+
+.introducao-perfil{
+    width: 70%;
+}
+
+.introducao-perfil p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.sobremim-curriculum{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna-1{
+    width: 48%;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+}
+
+.coluna-2{
+    width: 48%;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+}
+
+.caixa{
+	background-color: #ffffffcc;
+	border-radius: 1rem;
+	padding: 1rem;
+    box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+}
+
+.sobremim-curriculum dt+dd{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;;
+}
+
+.sobremim-curriculum dt+dd+dd {
+    font-weight: 600;
+    color: #888888;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.sobremim-curriculum-graficos{
+    color: #0982de;
+    font-weight: 600;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-basis: 50%;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.sobremim-curriculum-graficos ul{
+    width: 100%;
+}
+
+.sobremim-curriculum-graficos li{
+    list-style: none;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobremim-curriculum-graficos .barra-borda-externa {
+    border: 0.1rem solid #0982de;
+    border-radius: 1rem;
+    height: 2.2rem;
+    width: 60%;
+    display: flex;
+}
+
+.sobremim-curriculum-graficos .barra-percentual {
+    background: linear-gradient(90deg, #0982dedd, #0982de55);
+    margin: 0.2rem;
+    border-radius: 0.7rem;
+    height: 1.6rem;
+    display: inline-block;
+    align-items: self-end;
+}
+
+
+dl{
+	padding: 0rem 2rem;
+}
+dt{
+	font-weight: 600;
+    padding-top: 1rem;
+    color: #0982de;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+dd{
+	padding-bottom: 0.5rem;
+	color: #555555;
+}
+
+dd>ul {
+    border: 0.1rem solid #ccc;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+dd>ul>li {
+    padding-bottom: 1rem;
+    list-style: lower-alpha inside;
+}
+
+
+
+
+/* Contato */
+
+
+
+
+.formulario-container {
+	display: flex;
+    flex-wrap: wrap;
+}
+.imagem-lateral-formulario {
+	flex: 1 1 30%;
+}
+.imagem-formulario {
+	width: 100%;
+}
+form {
+	position: relative;
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form h2 {
+	color: #0982de;
+}
+
+form h3 {
+    color: #ff6000;
+}
+.formulario-parte-1 {
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 1rem;
+    flex-basis: 100%;
+    margin: 1rem 0rem;
+    box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+}
+
+.formulario-campo-50{
+	flex: 1 1 auto;
+}
+
+.formulario-parte-1 .formulario-campo-50 {
+    margin: 0rem 1rem;
+}
+
+
+.formulario-campo-100{
+	flex: 1 1 100%;
+    margin: 0rem 1rem;
+}
+.formulario-parte-2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffffcc;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0rem;
+    border-radius: 0.5rem;
+    flex-basis: 100%;
+    box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+}
+.formulario-parte-3{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ffffffcc;
+	padding: 0.5rem 2rem;
+	box-shadow: 0rem 10px 18px -17px rgb(0 0 1 / 30%);
+	margin: 1rem 0rem;
+	border-radius: 0.5rem;
+}
+[type="text"], [type="email"], [type="tel"], [type="url"], textarea {
+	margin-bottom: 2rem;
+	border: 1px solid #dddddd;
+	font-size: 1.6rem;
+	font-family: 'Inter', sans-serif;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+select {
+	margin-bottom: 2rem;
+	border: 1px solid #dddddd;
+	font-size: 1.6rem;
+	font-family: 'Inter', sans-serif;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+[type="text"]::placeholder, [type="email"]::placeholder, textarea::placeholder {
+	color: #999;
+}
+[type="submit"] {
+	background-color: #0982de;
+	border-radius: 0.5rem;
+	border: none;
+	color: #ffffff;
+	padding: 1rem;
+	font-weight: bold;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+[type="submit"]:hover {
+	background-color: #2b91df;
+}
+label{
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #000000;
+}
+select {
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+[type="text"]:focus, [type="email"]:focus, [type="tel"]:focus, [type="url"]:focus, textarea:focus{
+    outline:none;
+    border: 1px solid #0982de;
+}
+
+.link-whatsapp{
+    background: #2db842;
+    display: inline-block;
+    padding: 0 1rem;
+    
+    color: white;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.link-whatsapp img{
+    height: 1.6rem;
+}
+
+
+@media (max-width: 1024px) {
+
+.internas-main article h1 {
+    font-size: 8rem;
+    letter-spacing: -0.4rem;
+    line-height: 7rem;
+}
+
+.internas-design-arte {
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 25%;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.img-perfil {
+    width: 100%;
+    height: auto;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.internas-main {
+        flex-direction: column;
+}
+
+.internas-main article h1 {
+    font-size: 7rem;
+    letter-spacing: -0.35rem;
+    line-height: 6rem;
+}
+
+.internas-design-container{
+    flex-direction: column;
+}
+
+.internas-design-container.reverso{
+    flex-direction: column-reverse;
+}
+
+.internas-design-arte {
+    width: 100%;
+    margin-bottom: 3rem;
+    display: initial;
+    align-items: initial;
+}
+
+.internas-design-arte img {
+    width: 100%;
+}
+
+.internas-design-conteudo {
+    width: 100%;
+}
+
+/* Sobre mim */
+
+.internas-sobremim {
+    flex-direction: column;
+    align-items: center;
+}
+
+.introducao-perfil {
+    width: 100%;
+}
+
+.foto-perfil {
+    width: initial;
+    margin-right: initial;
+}
+
+.introducao-perfil {
+    width: 100%;
+}
+
+.coluna-1, .coluna-2 {
+    width: 100%;
+}
+
+/* Contato */ 
+
+.formulario-parte-1 {
+    flex-basis: 100%;
+    margin: 1rem 0rem;
+}
+
+
+}
+
+@media (max-width: 425px){
+
+.internas-main article h1 {
+    font-size: 5rem;
+    letter-spacing: -0.35rem;
+    line-height: 4rem;
+}
+    
+
+.internas-main h2 {
+    color: #0982de;
+    font-size: 3.5rem;
+    letter-spacing: -0.25rem;
+}
+
+
+}

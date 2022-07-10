@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fab"
+   data-icon="css3"
+   class="svg-inline--fa fa-css3"
+   role="img"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg3702"
+   sodipodi:docname="logo-twitter.svg"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata3708">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3706">
+    <linearGradient
+       id="id0"
+       gradientUnits="userSpaceOnUse"
+       x1="1166.52"
+       y1="2349.77"
+       x2="1166.52"
+       y2="7.6387401">
+      <stop
+         offset="0"
+         style="stop-opacity:1; stop-color:#F9F9F9"
+         id="stop3756" />
+      <stop
+         offset="1"
+         style="stop-opacity:1; stop-color:white"
+         id="stop3758" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview3704"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3702" />
+  <g
+     transform="matrix(0.75699056,0,0,0.75699056,4.7411039,70.86096)"
+     id="Camada_x0020_1"
+     style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+    <metadata
+       id="CorelCorpID_0Corel-Layer" />
+    <path
+       inkscape:connector-curvature="0"
+       class="fil0"
+       d="M 659,63 C 634,74 608,81 581,85 609,68 630,41 640,10 614,25 585,37 555,43 530,16 495,0 456,0 381,0 321,61 321,135 c 0,11 1,21 3,31 C 212,160 112,106 46,25 34,45 28,68 28,93 c 0,47 23,88 60,112 -22,-1 -43,-7 -62,-17 0,1 0,1 0,2 0,65 47,120 109,132 -12,3 -23,5 -36,5 -8,0 -17,-1 -25,-2 17,53 67,93 126,94 -46,36 -105,57 -168,57 -11,0 -21,0 -32,-1 60,38 131,60 207,60 249,0 385,-206 385,-384 0,-6 -1,-12 -1,-18 27,-19 49,-43 68,-70 z"
+       id="path3745"
+       style="fill:#ffffff" />
+  </g>
+</svg>

@@ -1,0 +1,684 @@
+/* Importando CSS de Tabelas */
+@import url('banners.css');
+@import url('tabelas.css');
+@import url('secoes-home.css');
+@import url('internas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+/* Arquivo CSS geral com estilos dos elementos de todas as páginas */
+* {
+  box-sizing: border-box;
+}
+html {
+	height: 100%;
+	font-size: 62.5%;
+	font-family: 'Inter', sans-serif;
+	color: #333333;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Inter', sans-serif;
+	font-size: 1.4rem;
+}
+
+/* Títulos e parágrafos normais */ 
+
+
+h1{
+	font-size: 2.4rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+
+h4{
+	font-size: 1.6rem;
+}
+
+p{
+	font-size: 1.4rem;
+
+}
+
+
+h1, h2, h3, h4, h5, h5, p {
+	margin: 1.66rem 0;
+}
+
+
+/* 	Cores */
+
+h2, h3, h4{
+	color: #0982de;
+}
+
+
+/*Container para o display Flex, considerando os dois pontos acima, 100% de altura no html e no body */
+.container {
+	display: flex;
+	flex-flow: column; /* manter, para que o fluxo seja de cima para baixo, coluna */
+	/*height: 100%;*/
+	background: linear-gradient(0, #2a5b97, #092042);
+}
+
+/* Header do site */
+
+header {
+  flex-grow: 0;
+  z-index: 1;
+}
+
+nav.menu-superior{
+	/*background-color: rgba(255,255,255,0.85);*/
+	display: flex;
+	box-shadow: 0px 10px 10px -12px rgb(0 0 1 / 30%), 0px -10px 13px -15px inset rgb(0 0 0 / 15%);
+	position: fixed;
+	height: 10rem;
+	width: 100%;
+	transition: all 500ms ease-in-out;
+}
+
+
+/* Fixo */ 
+
+
+.menu_superior_fixo {
+	background-color: rgba(255,255,255,0.75);
+	width: 100%;
+	height: 4rem!important;
+  	transition: all 500ms ease-in-out;
+  	backdrop-filter: blur(10px);
+}
+
+nav.menu-superior a.link_menu_scroll{
+	color: #555555;
+}
+
+nav.menu-superior a.link_menu_scroll.link-ativo{
+	color: #ff6000;
+}
+
+.link-menu-superior{
+	border-bottom: 2px solid #ff600000;
+	cursor: pointer;
+}
+
+.borda-menu{
+	border-bottom: 2px solid #ff6000;
+}
+/* Correção de posicionamento do target nas anchor tags */
+
+:target::before {
+	content: "";
+	display: block;
+	height: 60px; /* fixed header height*/
+	margin: -60px 0 0; /* negative fixed header height */
+  }
+
+.logo-site-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 20%;
+	flex-grow: 0;
+	position: relative;
+}
+
+.logo-site-container a {
+	position: absolute;
+	top: -5px;
+}
+.logo-site{
+	width: 75px;
+	height: 75px;
+	filter: drop-shadow(2px 2px 3px #00000066);
+	transition: all 500ms ease-in-out;
+}
+
+.logo-site.small-logo{
+	width: 50px;
+	height: 50px;
+}
+nav.menu-superior ul{
+	flex-grow: 0;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav.menu-superior li{
+	display: flex;
+    font-size: 1.6rem;
+    padding: 5px 30px;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 0.12rem;
+    box-shadow: 6px 0px 4px -6px #00000033;
+}
+
+nav.menu-superior li:hover {
+	background-color: #ffffff33;
+}
+
+nav.menu-superior li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav.menu-superior li a:hover{
+	color: #ff6000;
+	text-decoration: none;
+}
+
+
+/* Áreas principais */
+
+section{
+	display: flex; /*elemento filho, colocar flex também*/
+	flex-grow: 1; /* o quanto este elemento aumentará em relação aos outros */
+	flex-shrink: 1; /* o quanto este elemento reduzirá em relação aos outros */
+	flex-basis: auto; /* o quanto este elemento aumentará em relação aos outros */
+	z-index: 0;
+	width: 100%;
+}
+main{
+	display: flex; /*elemento filho, colocar flex também*/
+	flex-grow: 1; /* o quanto este elemento aumentará em relação aos outros */
+	flex-shrink: 1; /* o quanto este elemento reduzirá em relação aos outros */
+	flex-basis: auto; /* o quanto este elemento aumentará em relação aos outros */
+	z-index: 0;
+	width: 100%;
+}
+
+
+/* Menu de navegação lateral - páginas internas */ 
+
+nav.lateral {
+	width: 20%;
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+
+nav.lateral ul {
+  list-style-type: none;
+  padding: 1rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  margin: 1.4rem 0;
+}
+nav.lateral li {
+	padding-top: 10px;
+    padding-bottom: 10px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	box-shadow: 0 4px 8px -7px rgb(0 0 0 / 40%);
+	font-weight: 600;
+	display: flex;
+}
+nav.lateral h3{
+	color: #ffffff;
+}
+nav.lateral ul.aulas {
+	background-color: #0982de;
+	/*box-shadow: 0 4px 11px -8px rgb(0 0 0 / 95%);*/
+	/*border: 1px solid #496bc1;*/
+}
+nav.lateral ul.contato{
+	background-color: #ff6000;
+	/*box-shadow: 0 4px 11px -8px rgb(0 0 0 / 95%);
+	border: 1px solid #3aaec9;*/
+}
+.icone-container{
+	width: 15px;
+	display: flex;
+	margin-right: 3rem;
+}
+.icone-menu-lateral{
+	width: auto;
+	height: 100%;
+	min-width: 2rem;
+}
+
+/* Menu de navegação lateral - Pseudo-classes */
+
+nav.lateral li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav.lateral ul li a {
+	color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+
+nav.lateral ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav.lateral ul li a:visited {
+    color: #ffffffaa;
+}
+
+
+
+/* Article - padrão */
+
+article {
+	padding: 2rem;
+    max-width: 67.5%;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    margin: 0rem auto;
+}
+
+.article-home{
+	align-items: center;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-flow:  column;
+	flex-grow: 1;
+	box-shadow: 4px -5px 30px -10px rgb(0 0 0 / 50%);
+}
+
+article h1 {
+	font-size: 9rem;
+    font-weight: 200;
+    color: #2291e5;
+    letter-spacing: -0.45rem;
+    line-height: 8rem;
+    margin: 8rem 0rem;
+}
+
+article > p {
+	color: #999999;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+h3 ~ p {
+	font-size: 1.6rem;
+	color: #444444;
+	font-weight: 500;
+	line-height: 3rem
+}
+
+h3 + p {
+	background: #dddddd;
+	border-radius: 1rem;
+	padding: 1rem;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 1.6rem;
+	color: #000000;
+}
+
+
+h3 ~ p {
+	font-size: 1.6rem;
+	color: #444444;
+	font-weight: 500;
+	line-height: 3rem
+}
+
+h3 + p + p:first-letter{
+	font-size: 8rem;
+	float: left;
+	padding: 1rem;
+	color: #184FDB;
+}
+
+.conteudo-home{
+	width: 75%;
+}
+
+.conteudo-home h1{
+	font-size: 7rem;
+    font-weight: 600;
+    color: #fc670c;
+    letter-spacing: -0.3rem;
+}
+
+
+
+/* Footer */
+footer {
+	background: linear-gradient(45deg, #7e7f91, #6c90af);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    box-shadow: 0px -7px 30px -15px #000000;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+  }
+
+#botao-menu-responsivo {
+	display: none;
+  }
+
+  .rotacionar {
+	transform: rotate(90deg);
+}
+
+/* Validando formulário */
+
+.ocultar{
+	display: none;
+}
+
+.erro{
+	background-color: #ffe4e1;
+	color: red;
+}
+/*#objeto {
+	width: 200vw;
+    height: 100vw;
+    background: linear-gradient(45deg,transparent , #ffffff99, transparent, #ffffff , transparent);
+    position: fixed;
+    right: -300px;
+    z-index: 1;
+
+}*/
+/* Layout responsivo para as áreas padrão do site */
+
+.div-botao{
+	display: flex;
+	flex-basis: 100%;
+}
+.mensagem{
+	display: flex;
+    position: fixed;
+    width: 30%;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+	transition: 500ms ease-in-out;
+	align-content: flex-start;
+    justify-content: center;
+	opacity: 0;
+	border-radius: 10px;
+}
+
+.mensagem.display{
+	display: flex;
+    position: fixed;
+    z-index: 1000;
+    background: #ff736388;
+    padding: 2rem;
+	width: 30%;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    align-content: flex-start;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px -5px #000000;
+	transition: 500ms ease-in-out;
+	flex-direction: column;
+	opacity: 1;
+	align-items: center;
+}
+
+.mensagem.fade{
+	opacity: 0;
+	transition: 500ms ease-in-out;
+
+}
+
+.resultado{
+}
+.resultado.problema{
+	border: 0.2rem solid red;
+	color: red;
+	border-radius: 1rem;
+	padding: 1rem;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-basis: 100%!important;
+}
+.resultado.ok{
+	border: 0.2rem solid green;
+	color: green;
+	border-radius: 1rem;
+	padding: 1rem;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-basis: 100%!important;
+
+}
+@media (max-width: 1024px){
+
+article {
+	padding: 2rem;
+	max-width: 90%;
+}
+.logo-site-container a {
+	top: -10px;
+	left: 25px;
+}
+
+nav.lateral {
+	width: 10%;
+}
+.icone-container{
+	justify-content: center;
+    flex-basis: 100%;
+    margin: 0;
+}
+
+nav.lateral li {
+    font-size: 1.2rem;
+}
+
+nav.lateral ul li a{
+	justify-content: center;
+    text-align: center;
+}
+
+.icone-menu-lateral {
+    width: 15px;
+    height: auto;
+    min-width: 1rem;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+	.overlay{
+		position: fixed;
+    	width: 100vw;
+    	height: 100vh;
+    	display: none;
+    	background-color: #ffffff99;
+    	z-index: 1;
+    	backdrop-filter: blur(4px);
+	}
+
+	.internas-design-introducao {
+		padding: 2rem 2rem;
+	}
+
+	#botao-menu-responsivo {
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		display: flex;
+    	background-color: #fc6601;
+    	width: 5rem;
+    	height: 5rem;
+    	justify-content: center;
+    	align-items: center;
+    	border-radius: 0.5rem;
+    	border: 2px solid #fff;
+    	box-shadow: 10px 10px 10px -10px;
+    	z-index: 5;
+		transition: 300ms ease-in-out;
+	} 
+
+	#menu-ul {
+		position: absolute;
+    	right: -500px;
+    	background-color: #fc6601dd;
+    	transition: all 500ms ease-in-out;
+    	backdrop-filter: blur(10px)!important;
+    	top: 20rem!important;
+    	box-shadow: 0px 5px 10px -5px #000000;
+	}
+
+	.exibir-menu{
+		right: 0rem!important;
+	}
+
+	.exibir-overlay{
+		display: block!important;
+	}
+
+
+	article {
+		max-width: 100%;
+	}
+
+	.logo-site-container a {
+	    position: relative;
+		top: initial;
+		left: initial;
+	}
+	nav.menu-superior {
+	    height: auto;
+	}
+	nav.lateral, article {
+	    width: 100%;
+		height: auto;
+		margin: initial;
+	  }
+	nav.menu-superior {
+		flex-flow: column;
+	}
+	nav.menu-superior ul {
+		flex-grow: 0;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-flow: column;
+		text-align: center;
+	}
+	nav.menu-superior li{
+		flex-flow: column;
+		/*backdrop-filter: blur(10px);*/
+		font-size: 2rem;
+		padding: 2rem;
+		font-weight: 600;
+	}
+
+	nav.menu-superior li a.link_menu_scroll{
+		color: #ffffff;
+	}
+	
+	nav.menu-superior li a.link_menu_scroll.link-ativo {
+		color: #ffffff;
+		/*border-bottom: 2px solid #ff6000;*/
+	}
+	.borda-menu{
+		border-bottom: 2px solid #ffffff;
+	}
+
+	section{
+		flex-flow: column;
+	}
+
+	nav.lateral ul li a {
+	    justify-content: space-between;
+		text-align: initial;
+	}
+
+	.icone-container{
+		justify-content: initial;
+	    flex-basis: initial;
+		margin-right: 3rem;
+	}
+
+	.icone-menu-lateral{
+		width: auto;
+		height: 100%;
+		min-width: 2rem;
+	}
+
+	nav.lateral li {
+	    font-size: 1.8rem;
+	}
+
+	form {
+		flex: 1 1 100%;	
+	}
+
+	.campo-primeiro {
+		margin: 0;
+	}
+	dl{
+		padding: 0;
+	}
+	iframe{
+		width: 100%;
+	}
+
+	video{
+		width: 100%;
+	}
+}
+
+@media (max-width: 425px) {
+
+
+}
