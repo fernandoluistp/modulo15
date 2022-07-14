@@ -49,42 +49,42 @@
 
 					<div class="formulario-container">
 							<p>* Dados de preenchimento obrigatório</p>
-						<form method="post">
+						<form id="formulario-cadastro" method="post">
 							
 	
 							<div id="dadosbasicos" class="formulario-parte-1 secao">
 								<h3>Dados básicos</h3>
 
 								<div class="formulario-campo-50">
-									<label for="nome">Nome:</label>
-									<input type="text" name="Nome" id="nome" placeholder="Digite seu nome" class="requerido" >
+									<label for="nome">Nome:*</label>
+									<input type="text" name="Nome" id="nome" placeholder="Digite seu nome" class="requerido" maxlength="100">
 								</div>
 								<div class="formulario-campo-50">
-									<label for="email">E-mail:</label>
-									<input type="email" name="E-mail" id="email" placeholder="Digite seu e-mail" class="email" >
+									<label for="email">E-mail:*</label>
+									<input type="email" name="E-mail" id="email" placeholder="Digite seu e-mail" class="email" maxlength="80">
 								</div>
 								<div class="formulario-campo-50">
-									<label for="fone">Fone:</label>
-									<input type="tel" name="Fone" id="fone" placeholder="Digite somente os números com código do país" class="fone" >
+									<label for="fone">Fone:*</label>
+									<input type="tel" name="Fone" id="fone" placeholder="Digite somente os números com código do país" maxlength="20" class="fone" >
 								</div>
 								<div class="formulario-campo-50">
-									<label for="nome">Endereço:</label>
-									<input type="text" name="Endereço" id="endereco" placeholder="Digite seu Endereço" class="requerido"  >
+									<label for="nome">Endereço:*</label>
+									<input type="text" name="Endereço" id="endereco" placeholder="Digite seu Endereço" class="requerido" maxlength="100" >
 								</div>
 								<div class="formulario-campo-50">
-									<label for="nome">Cidade:</label>
-									<input type="text" name="Cidade" id="cidade" placeholder="Digite sua cidade" class="requerido"  >
+									<label for="nome">Cidade:*</label>
+									<input type="text" name="Cidade" id="cidade" placeholder="Digite sua cidade" class="requerido" maxlength="100" >
 								</div>
 								<div class="formulario-campo-50">
-									<label for="estado">Estado:</label>
+									<label for="estado">Estado:*</label>
 									<select name="Estado" id="uf" class="uf">
 				
 
 									</select>
 								</div>
 								<div class="formulario-campo-50">
-									<label for="cep">CEP:</label>
-									<input type="text" name="CEP" id="cep" placeholder="Digite seu CEP" class="cep"  >
+									<label for="cep">CEP:*</label>
+									<input type="text" name="CEP" id="cep" placeholder="Digite seu CEP" class="cep" maxlength="9" >
 								</div>
 
 								
@@ -95,7 +95,7 @@
 
 								<div class="formulario-campo-50">
 									<p>
-										<label for="pessoa">Cadastro para:</label>
+										<label for="pessoa">Cadastro para:*</label>
 										<label><input type="radio" id="pf" name="pessoa" value="pessoafisica" checked="checked" > Pessoa Física</label>
 										<label><input type="radio" id="pj" name="pessoa" value="pessoajuridica"> Pessoa Jurídica</label>
 									</p>
@@ -107,17 +107,17 @@
 								<h3 >Dados complementares</h3>
 
 								<div class="formulario-campo-50 campo-pf">
-									<label for="cpf">CPF:</label>
-									<input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite somente os números"  >
+									<label for="cpf">CPF:*</label>
+									<input type="text" name="cpf" id="cpf" maxlength="14" class="cpf" placeholder="Digite somente os números"  >
 								</div>
 
 								<div class="formulario-campo-50 campo-pj ocultar">
-									<label for="empresa">Sua empresa:</label>
-									<input type="text" name="empresa" class="requeridoPJ" id="empresa" placeholder="Sua empresa"  >
+									<label for="empresa">Sua empresa:*</label>
+									<input type="text" name="empresa" class="requeridoPJ" id="empresa" maxlength="100" placeholder="Sua empresa"  >
 								</div>
 								<div class="formulario-campo-50 campo-pj ocultar">
-									<label for="cnpj">CNPJ:</label>
-									<input type="tel" name="cnpj" id="cnpj" class="cnpj" placeholder="Digite somente os números"  >
+									<label for="cnpj">CNPJ:*</label>
+									<input type="tel" name="cnpj" id="cnpj" maxlength="18" class="cnpj" placeholder="Digite somente os números"  >
 								</div>
 								<div class="formulario-campo-50 campo-pj ocultar">
 									<label for="url">Seu site:</label>
@@ -130,7 +130,7 @@
 
 								<div class="formulario-campo-50">
 									<p>
-										<label>Quais serviços você deseja?</label>
+										<label>Quais serviços você deseja?*</label>
 										<label><input type="checkbox" name="quais-servicos" class="check-servicos" value="ux-ui-frontend" > UX / UI / Front-End</label>
 										<label><input type="checkbox" name="quais-servicos" class="check-servicos" value="design"> Design</label>
 										<label><input type="checkbox" name="quais-servicos" class="check-servicos" value="outros"> Outros</label>
@@ -138,7 +138,7 @@
 								</div>
 
 								<div class="formulario-campo-100">
-									<label for="briefing">Por favor, explique resumidamente seu projeto ou necessidade:</label>
+									<label for="briefing">Por favor, explique resumidamente seu projeto ou necessidade:*</label>
 									<textarea name="briefing" id="briefing" rows="5" class="requerido" placeholder="Digite seu briefing"></textarea>
 								</div>
 							</div>
@@ -150,9 +150,9 @@
 						
 							</div>
 							
-							<div class="resultado"></div>
+							
 						</form>
-			
+						<div class="resultado"></div>
 					</div>
 			</article>
 

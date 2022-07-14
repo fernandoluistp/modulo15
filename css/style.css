@@ -483,6 +483,7 @@ footer a{
     align-content: center;
     align-items: center;
     flex-basis: 100%!important;
+	margin: 2rem 0rem;
 }
 .resultado.ok{
 	border: 0.2rem solid green;
@@ -494,8 +495,9 @@ footer a{
     align-content: center;
     align-items: center;
     flex-basis: 100%!important;
-
+	margin: 2rem 0rem;
 }
+
 @media (max-width: 1024px){
 
 article {

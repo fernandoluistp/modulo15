@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for(let campoFone of camposFones){
         campoFone.addEventListener("focusout", function() {validaCampoFone(campoFone);});
     }
-    
+
     document.addEventListener("submit", function(evento){
         evento.preventDefault();
         validaTudo();
@@ -545,9 +545,12 @@ function validaTudo(){
     campoEstadoValido = validaEstado();
  
      if(camposPadraoValidos && camposCEPValidos && camposCPFValidos && camposFoneValidos && camposEmailValidos && campoEstadoValido && camposCheckValido == true){
+            const formulario = document.getElementById("formulario-cadastro");
             document.querySelector('.resultado').innerHTML = "Formulário pronto para ser enviado!";
             document.querySelector('.resultado').classList.add('ok');
             document.querySelector('.resultado').classList.remove('problema');
+            formulario.reset();
+
         }
         else{
             document.querySelector('.resultado').innerHTML = "Revise os campos com problema.";
